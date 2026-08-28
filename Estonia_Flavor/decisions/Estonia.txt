@@ -1,0 +1,14 @@
+political_decisions = {
+	Integrate_Baltic_Germans = {
+		potential = {
+			tag = EST
+			ai = no
+			NOT = { accepted_culture = north_german }
+		}
+		allow = {
+		}
+		effect = {
+			add_accepted_culture = north_german
+		}
+	}
+}
