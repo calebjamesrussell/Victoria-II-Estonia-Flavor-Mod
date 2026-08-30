@@ -3,7 +3,7 @@
 
 for installation: add the folder and .mod file to your Victoria II installation's \mod\ folder.
 
-New Decisions:
+This mod sets the literacy of Estonia to historically accurate levels and adds New Decisions:
 
 Publish the Kalevipoeg: Requires Romanticism (1857 or later); grants prestige and boosts consciousness for all Estonian POPs.
 
