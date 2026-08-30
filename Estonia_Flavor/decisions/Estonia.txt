@@ -225,6 +225,10 @@ political_decisions = {
 			set_country_flag = treaty_of_tartu
 			prestige = 20
 			treasury = 100000 
+			any_core = {
+				remove_core = RUS
+				remove_core = SOV
+			}
 		}
 	}
 
