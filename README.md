@@ -1,9 +1,9 @@
 # Victoria II mod for Estonia: additional Decisions
 
 
-Add the folder and .mod file to your Victoria II installation's \mod\ folder.
+for installation: add the folder and .mod file to your Victoria II installation's \mod\ folder.
 
-New Decisions & Mechanics
+New Decisions:
 
 Publish the Kalevipoeg: Requires Romanticism (1857 or later); grants prestige and boosts consciousness for all Estonian POPs.
 
@@ -22,3 +22,5 @@ Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yiel
 Declare the Era of Silence (Vaikiv Ajastu): An emergency measure for democracies facing high militancy and >15% Fascist Upper House support; changes government to Presidential Dictatorship to drastically cut militancy.
 
 Propose the Baltic Entente: Allows an independent Estonia (if a Secondary Power) to automatically sphere and/or ally Latvia and Lithuania while burning off Infamy.
+<img width="505" height="464" alt="image" src="https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339" />
+<img width="508" height="461" alt="image" src="https://github.com/user-attachments/assets/63bebbc9-0bb0-4de7-bf43-7c14a99698da" />
