@@ -217,7 +217,7 @@
 	}
 }
 
-# PÃ¤rnu / Pernau (351) - Major Export Port of Northern Livland
+# Pärnu / Pernau (351) - Major Export Port of Northern Livland
 351 = {
 	aristocrats = {
 		culture = north_german

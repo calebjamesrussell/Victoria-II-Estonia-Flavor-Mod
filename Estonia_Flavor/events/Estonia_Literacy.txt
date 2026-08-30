@@ -1,0 +1,140 @@
+# Estonia Regional Pop-Level Literacy Initialization
+country_event = {
+	id = 95500
+	title = "High Literacy in the Baltic Provinces"
+	desc = "Centuries of parish schooling and academic institutions have fostered exceptionally high literacy across the Baltic governorates."
+	picture = "administration"
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 349 # Reval / Tallinn
+		year = 1836
+		NOT = { has_global_flag = estonia_literacy_initialized }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA95500"
+		set_global_flag = estonia_literacy_initialized
+
+		# -------------------------------------------------------------
+		# 349 - Reval / Tallinn
+		# -------------------------------------------------------------
+		349 = {
+			# Estonians
+			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
+			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
+
+			# Baltic Germans (north_german)
+			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
+			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
+			any_pop = { limit = { type = bureaucrats culture = north_german } literacy = 0.80 } # Target: 0.90
+			any_pop = { limit = { type = officers culture = north_german } literacy = 0.80 }    # Target: 0.90
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
+
+			# Coastal Swedes
+			any_pop = { limit = { type = clergymen culture = swedish } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = artisans culture = swedish } literacy = 0.65 }     # Target: 0.75
+			any_pop = { limit = { type = farmers culture = swedish } literacy = 0.60 }      # Target: 0.70
+			any_pop = { limit = { type = soldiers culture = swedish } literacy = 0.55 }     # Target: 0.65
+
+			# Russians
+			any_pop = { limit = { type = aristocrats culture = russian } literacy = 0.65 }  # Target: 0.75
+			any_pop = { limit = { type = bureaucrats culture = russian } literacy = 0.60 }  # Target: 0.70
+			any_pop = { limit = { type = officers culture = russian } literacy = 0.60 }     # Target: 0.70
+			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
+			any_pop = { limit = { type = artisans culture = russian } literacy = 0.30 }     # Target: 0.40
+			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.15 }     # Target: 0.25
+		}
+
+		# -------------------------------------------------------------
+		# 350 - Narva
+		# -------------------------------------------------------------
+		350 = {
+			# Estonians
+			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.70 }   # Target: 0.80
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
+			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
+
+			# Baltic Germans
+			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
+
+			# Russians
+			any_pop = { limit = { type = aristocrats culture = russian } literacy = 0.65 }  # Target: 0.75
+			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
+			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }     # Target: 0.35
+			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.10 }     # Target: 0.20
+			any_pop = { limit = { type = farmers culture = russian } literacy = 0.10 }      # Target: 0.20
+		}
+
+		# -------------------------------------------------------------
+		# 351 - Pärnu / Pernau
+		# -------------------------------------------------------------
+		351 = {
+			# Baltic Germans
+			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
+			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
+
+			# Estonians
+			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
+			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
+		}
+
+		# -------------------------------------------------------------
+		# 352 - Tartu / Dorpat
+		# -------------------------------------------------------------
+		352 = {
+			# Baltic Germans (University Faculty & Elites)
+			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
+			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
+			any_pop = { limit = { type = bureaucrats culture = north_german } literacy = 0.85 } # Target: 0.95
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.80 }    # Target: 0.90
+			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
+
+			# Estonians
+			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
+			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
+
+			# Russians
+			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
+			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }     # Target: 0.35
+			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.10 }     # Target: 0.20
+			any_pop = { limit = { type = farmers culture = russian } literacy = 0.10 }      # Target: 0.20
+		}
+
+		# -------------------------------------------------------------
+		# 353 - Kuressaare / Arensburg
+		# -------------------------------------------------------------
+		353 = {
+			# Baltic Germans
+			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
+			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
+
+			# Estonians
+			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
+			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
+
+			# Coastal Swedes
+			any_pop = { limit = { type = artisans culture = swedish } literacy = 0.65 }     # Target: 0.75
+			any_pop = { limit = { type = farmers culture = swedish } literacy = 0.60 }      # Target: 0.70
+		}
+	}
+}

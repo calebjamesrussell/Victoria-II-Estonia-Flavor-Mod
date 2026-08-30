@@ -20,3 +20,6 @@ vaikiv_ajastu_title;Declare the Era of Silence;French;German;Polish;Spanish;Ital
 vaikiv_ajastu_desc;Faced with the rising threat of radical movements destabilizing the republic, the government has preemptively seized emergency powers. Political parties will be banned and parliament suspended to restore order during this Vaikiv Ajastu.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 propose_baltic_entente_title;Propose the Baltic Entente;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 propose_baltic_entente_desc;As a rising power in the region, Estonia is well-positioned to lead a diplomatic bloc. By bringing Latvia and Lithuania into our sphere, we can form a united Baltic front against foreign aggression.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95500;The Baltic Schooling Tradition;;;;;;;;;;;;;x
+EVTDESC95500;Centuries of Lutheran parish schooling, confirmation reading requirements, and the academic presence of the Imperial University of Dorpat have left the population of Estland and Livland far more literate than the imperial norm.;;;;;;;;;;;;;x
+EVTOPTA95500;Vana hea Rootsi aeg.;;;;;;;;;;;;;x
