@@ -89,7 +89,7 @@ political_decisions = {
 		picture = "polevkivi"
 		potential = {
 			tag = EST
-			owns = 377 # Narva
+			owns = 350 # Narva
 			not = { has_province_flag = polevkivi_exploited }
 		}
 		allow = {
