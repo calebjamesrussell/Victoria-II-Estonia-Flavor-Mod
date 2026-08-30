@@ -1,4 +1,24 @@
 # Victoria II mod for Estonia: additional Decisions
 
 
-Add these files to ...\Steam\steamapps\common\Victoria 2\mod\ , for example
+Add the folder and .mod file to your Victoria II installation's \mod\ folder.
+
+New Decisions & Mechanics
+
+Publish the Kalevipoeg: Requires Romanticism (1857 or later); grants prestige and boosts consciousness for all Estonian POPs.
+
+Found the Estonian Students' Society (EÜS): Requires State & Government; provides a lump sum of research points and raises consciousness among Estonian clerks and clergymen.
+
+Exploit the Põlevkivi Reserves: Requires Clean Coal; changes the Narva province RGO to coal and provides wealth to local craftsmen.
+
+Enact the Radical Land Reform: Demotes aristocrats to farmers and heavily reduces lower-class militancy, but destroys relations with Germany and Russia while cutting Conservative and Reactionary support in the Upper House.
+
+Expand the Baltic Railway: A massive treasury sink that instantly builds Level 1 Railroads in Tallinn, Tartu, and Narva.
+
+Found the Kaitseliit: Triggers during wartime or high unrest (Militancy > 4); spawns a free irregular "Tallinna Malev" brigade in the capital and reduces soldier militancy.
+
+Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yields high prestige and a massive 50,000 treasury injection representing Russian imperial gold rubles.
+
+Declare the Era of Silence (Vaikiv Ajastu): An emergency measure for democracies facing high militancy and >15% Fascist Upper House support; changes government to Presidential Dictatorship to drastically cut militancy.
+
+Propose the Baltic Entente: Allows an independent Estonia (if a Secondary Power) to automatically sphere and/or ally Latvia and Lithuania while burning off Infamy.
