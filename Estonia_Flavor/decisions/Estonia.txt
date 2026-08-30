@@ -11,6 +11,44 @@ political_decisions = {
 		}
 		effect = {
 			add_accepted_culture = north_german
+			plurality = 0.05
+			# Estonian majority feels betrayed by the compromise
+			any_pop = {
+				limit = {
+					culture = estonian
+				}
+				militancy = 3
+				consciousness = 2.0
+			}
+			# Baltic German elite solidifies loyalty to the state
+			any_pop = {
+				limit = {
+					culture = north_german
+				}
+				militancy = -4
+				consciousness = -2
+			}
+			# Diplomatic realignment
+			any_country = {
+				limit = {
+					OR = {
+						tag = PRU
+						tag = NGF
+						tag = GER
+					}
+				}
+				relation = {
+					who = THIS
+					value = 75
+				}
+			}
+		}
+		ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { average_militancy = 7 }
+			}
 		}
 	}
 
@@ -172,8 +210,8 @@ political_decisions = {
 			treasury = -10000
 			prestige = 5
 			373 = { railroad_level = 2 }
-			375 = { railroad_level = 2 }
-			377 = { railroad_level = 2 }
+			375 = { railroad_level = 1 }
+			377 = { railroad_level = 1 }
 		}
 	}
 
