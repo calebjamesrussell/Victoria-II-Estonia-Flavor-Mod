@@ -1,5 +1,7 @@
 political_decisions = {
-	Integrate_Baltic_Germans = {
+
+	integrate_baltic_germans = {
+	picture = "integrate_baltic_germans"
 		potential = {
 			tag = EST
 			ai = no
@@ -11,30 +13,271 @@ political_decisions = {
 			add_accepted_culture = north_german
 		}
 	}
-	first_estonian_song_festival = {
-		picture = song_festival
+
+	organize_laulupidu = {
+		picture = "laulupidu"
 		potential = {
 			tag = EST
-			NOT = { has_country_flag = song_festival_held }
+			not = { has_country_flag = laulupidu_organized }
 		}
 		allow = {
-			year = 1869
-			money = 500
+			nationalism_n_imperialism = 1
+			owns = 375 # Tartu
 		}
 		effect = {
-			set_country_flag = song_festival_held
-			prestige = 50
-			money = -500
+			set_country_flag = laulupidu_organized
+			prestige = 10
 			any_pop = {
-				limit = {
-					has_pop_culture = estonian
+				limit = { is_culture = estonian }
+				consciousness = 2
+				militancy = -1
+			}
+		}
+	}
+
+	publish_kalevipoeg = {
+		picture = "kalevipoeg"
+		potential = {
+			tag = EST
+			not = { has_country_flag = kalevipoeg_published }
+		}
+		allow = {
+			year = 1857
+			romanticism = 1
+		}
+		effect = {
+			set_country_flag = kalevipoeg_published
+			prestige = 10
+			any_pop = {
+				limit = { is_culture = estonian }
+				consciousness = 2
+			}
+		}
+	}
+
+	found_eus = {
+		picture = "eus"
+		potential = {
+			tag = EST
+			not = { has_country_flag = eus_founded }
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = eus_founded
+			prestige = 10
+			research_points = 2000
+			any_pop = {
+				limit = { 
+					is_culture = estonian 
+					type = clerks 
 				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = { 
+					is_culture = estonian 
+					type = clergymen 
+				}
+				consciousness = 2
+			}
+		}
+	}
+
+	exploit_polevkivi = {
+		picture = "polevkivi"
+		potential = {
+			tag = EST
+			owns = 377 # Narva
+			not = { has_province_flag = polevkivi_exploited }
+		}
+		allow = {
+			clean_coal = 1
+		}
+		effect = {
+			377 = {
+				set_province_flag = polevkivi_exploited
+				trade_goods = coal
+				any_pop = {
+					limit = { type = craftsmen }
+					money = 100
+				}
+			}
+		}
+	}
+
+	radical_land_reform = {
+		picture = "land_reform"
+		potential = {
+			tag = EST
+			not = { has_country_flag = radical_land_reform }
+		}
+		allow = {
+			civilized = yes
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = socialist
+				ruling_party_ideology = anarcho_liberal
+				ruling_party_ideology = communist
+			}
+		}
+		effect = {
+			set_country_flag = radical_land_reform
+			any_pop = {
+				limit = { type = aristocrats }
+				militancy = 8
 				consciousness = 5
+			}
+			any_pop = {
+				limit = { type = farmers }
+				militancy = -4
+			}
+			upper_house = {
+				ideology = reactionary
+				value = -0.15
+			}
+			upper_house = {
+				ideology = conservative
+				value = -0.10
+			}
+			relation = {
+				who = GER
+				value = -100
+			}
+			relation = {
+				who = NGF
+				value = -100
+			}
+			relation = {
+				who = RUS
+				value = -50
+			}
+		}
+	}
+
+	expand_baltic_railway = {
+		picture = "baltic_railway"
+		potential = {
+			tag = EST
+			owns = 373 # Tallinn
+			not = { has_country_flag = baltic_railway }
+		}
+		allow = {
+			early_railroad = 1
+			money = 10000
+		}
+		effect = {
+			set_country_flag = baltic_railway
+			treasury = -10000
+			prestige = 5
+			373 = { railroad_level = 2 }
+			375 = { railroad_level = 2 }
+			377 = { railroad_level = 2 }
+		}
+	}
+
+	found_kaitseliit = {
+		picture = "kaitseliit"
+		potential = {
+			tag = EST
+			not = { has_country_flag = kaitseliit_founded }
+		}
+		allow = {
+			OR = {
+				war = yes
+				average_militancy = 4
+			}
+		}
+		effect = {
+			set_country_flag = kaitseliit_founded
+			leadership = 20
+			373 = {
+				add_corps = {
+					name = "1. Kaitseliit"
+					location = 373
+					brigade = {
+						name = "Tallinna Malev"
+						type = irregular
+					}
+				}
+			}
+			any_pop = {
+				limit = { type = soldiers }
 				militancy = -2
 			}
 		}
-		ai_will_do = {
-			factor = 1
+	}
+
+	treaty_of_tartu = {
+		picture = "treaty_of_tartu"
+		potential = {
+			tag = EST
+			not = { has_country_flag = treaty_of_tartu }
+			exists = RUS
+		}
+		allow = {
+			year = 1920
+			not = { war_with = RUS }
+			not = { war_with = SOV }
+		}
+		effect = {
+			set_country_flag = treaty_of_tartu
+			prestige = 20
+			treasury = 100000 
+		}
+	}
+
+	vaikiv_ajastu = {
+		picture = "vaikiv_ajastu"
+		potential = {
+			tag = EST
+			government = democracy
+			not = { has_country_flag = vaikiv_ajastu }
+		}
+		allow = {
+			average_militancy = 4
+			upper_house = {
+				ideology = fascist
+				value = 0.15
+			}
+		}
+		effect = {
+			set_country_flag = vaikiv_ajastu
+			government = presidential_dictatorship
+			prestige = -10
+			any_pop = {
+				militancy = -4
+			}
+		}
+	}
+
+	propose_baltic_entente = {
+		picture = "baltic_entente"
+		potential = {
+			tag = EST
+			is_secondary_power = yes
+			exists = LAT
+			exists = LIT
+			not = { has_country_flag = baltic_entente }
+		}
+		allow = {
+			LAT = { in_sphere = no }
+			LIT = { in_sphere = no }
+		}
+		effect = {
+			set_country_flag = baltic_entente
+			badboy = -3
+			diplomatic_influence = {
+				who = LAT
+				value = 400
+			}
+			diplomatic_influence = {
+				who = LIT
+				value = 400
+			}
+			add_alliance = LAT
+			add_alliance = LIT
 		}
 	}
 }
