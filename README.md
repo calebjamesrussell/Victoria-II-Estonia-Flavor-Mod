@@ -11,13 +11,13 @@ Found the Estonian Students' Society (EÜS): Requires State & Government; provid
 
 Exploit the Põlevkivi Reserves: Requires Clean Coal; changes the Narva province RGO to coal and provides wealth to local craftsmen.
 
-Enact the Radical Land Reform: Demotes aristocrats to farmers and heavily reduces lower-class militancy, but destroys relations with Germany and Russia while cutting Conservative and Reactionary support in the Upper House.
+Enact the Land Reform: Demotes aristocrats to farmers and heavily reduces lower-class militancy, affecting relations with Germany and Russia while cutting Conservative and Reactionary support in the Upper House.
 
-Expand the Baltic Railway: A massive treasury sink that instantly builds Level 1 Railroads in Tallinn, Tartu, and Narva.
+Expand the Baltic Railway: A massive treasury sink that instantly builds railroads in Tallinn, Tartu, and Narva.
 
 Found the Kaitseliit: Triggers during wartime or high unrest (Militancy > 4); spawns a free irregular "Tallinna Malev" brigade in the capital and reduces soldier militancy.
 
-Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yields high prestige and a massive 50,000 treasury injection representing Russian imperial gold rubles.
+Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yields high prestige and a massive treasury injection representing Russian imperial gold rubles.
 
 Declare the Era of Silence (Vaikiv Ajastu): An emergency measure for democracies facing high militancy and >15% Fascist Upper House support; changes government to Presidential Dictatorship to drastically cut militancy.
 
