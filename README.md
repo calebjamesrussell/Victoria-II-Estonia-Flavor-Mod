@@ -25,3 +25,5 @@ Propose the Baltic Entente: Allows an independent Estonia (if a Secondary Power)
 
 
 <img width="505" height="464" alt="image" src="https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339" />
+
+<img width="614" height="560" alt="image" src="https://github.com/user-attachments/assets/eeb80edb-0e83-41ca-bfe2-c4e1f02432cb" />
