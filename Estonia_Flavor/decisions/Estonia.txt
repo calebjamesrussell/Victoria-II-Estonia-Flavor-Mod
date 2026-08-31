@@ -139,15 +139,15 @@ political_decisions = {
 				trade_goods = coal
 				life_rating = 2
 				
-				# Bonus to the mining population
-				any_pop = {
-					limit = { type = labourers }
-					money = 100
-				}
 				# Turn local farmers into miners to staff the RGO immediately
 				farmers = {
 					pop_type = labourers
 					factor = 0.25
+				}
+				# Bonus to the mining population
+				any_pop = {
+					limit = { type = labourers }
+					money = 100
 				}
 			}
 		}
@@ -206,25 +206,28 @@ political_decisions = {
 	}
 
 	expand_baltic_railway = {
-		picture = "baltic_railway"
-		potential = {
-			tag = EST
-			owns = 373 # Tallinn
-			not = { has_country_flag = baltic_railway }
+			picture = "baltic_railway"
+			potential = {
+				tag = EST
+				owns = 349 # Tallinn / Reval
+				NOT = { has_country_flag = baltic_railway }
+			}
+			allow = {
+				early_railroad = 1
+				money = 10000
+			}
+			effect = {
+				set_country_flag = baltic_railway
+				money = -10000
+				prestige = 5
+				349 = { infrastructure = 2 } # Tallinn (Connects main port)
+				350 = { infrastructure = 1 } # Narva (Links toward St. Petersburg)
+				352 = { infrastructure = 1 } # Tartu / Dorpat
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
-		allow = {
-			early_railroad = 1
-			money = 10000
-		}
-		effect = {
-			set_country_flag = baltic_railway
-			treasury = -10000
-			prestige = 5
-			373 = { railroad_level = 2 }
-			375 = { railroad_level = 1 }
-			377 = { railroad_level = 1 }
-		}
-	}
 
 	found_kaitseliit = {
 		picture = "kaitseliit"
@@ -241,7 +244,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = kaitseliit_founded
 			leadership = 20
-			373 = {
+			349 = {
 				add_corps = {
 					name = "1. Kaitseliit"
 					location = 373
