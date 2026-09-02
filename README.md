@@ -19,8 +19,6 @@ Found the Kaitseliit: Triggers during wartime or high unrest (Militancy > 4); sp
 
 Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yields high prestige and a massive treasury injection representing Russian imperial gold rubles.
 
-Declare the Era of Silence (Vaikiv Ajastu): An emergency measure for democracies facing high militancy and >15% Fascist Upper House support; changes government to Presidential Dictatorship to drastically cut militancy.
-
 Propose the Baltic Entente: Allows an independent Estonia (if a Secondary Power) to automatically sphere and/or ally Latvia and Lithuania while burning off Infamy.
 
 
