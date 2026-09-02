@@ -293,17 +293,37 @@ political_decisions = {
 		}
 		allow = {
 			average_militancy = 4
+			farmers = {
+				militancy = 6
+			}
+			soldiers = {
+				militancy = 6
+			}
 			upper_house = {
-				ideology = fascist
-				value = 0.15
+				ideology = reactionary
+				value = 0.20
 			}
 		}
 		effect = {
 			set_country_flag = vaikiv_ajastu
 			government = presidential_dictatorship
 			prestige = -10
+			plurality = -0.10
+			money = -50000
+			administrative_efficiency = 0.05
+			leadership = 20
+			political_parties = underground_parties
+			press_rights = censored_press
+			public_meetings = no_meeting
+			ruling_party_ideology = conservative
+			remove_accepted_culture = north_german
 			any_pop = {
 				militancy = -4
+				consciousness = -2
+			}
+			estonian = {
+				militancy = -1
+				consciousness = -2
 			}
 		}
 	}
