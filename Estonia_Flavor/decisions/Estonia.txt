@@ -139,16 +139,17 @@ political_decisions = {
 				trade_goods = coal
 				life_rating = 2
 				
-				# Turn local farmers into miners to staff the RGO immediately
-				farmers = {
+				# Turn local farmers into miners to staff the new coal mines
+				any_pop = {
+					limit = { type = farmers }
 					pop_type = labourers
 					factor = 0.25
-				}
+					}
 				# Bonus to the mining population
 				any_pop = {
 					limit = { type = labourers }
 					money = 100
-				}
+					}
 			}
 		}
 		ai_will_do = {
@@ -182,13 +183,15 @@ political_decisions = {
 				limit = { type = farmers }
 				militancy = -4
 			}
-			upper_house = {
-				ideology = reactionary
-				value = -0.15
-			}
-			upper_house = {
-				ideology = conservative
-				value = -0.10
+			any_pop = {
+				ideology = {
+					factor = -0.15
+					value = reactionary
+				}
+				ideology = {
+					factor = -0.10
+					value = conservative
+				}
 			}
 			relation = {
 				who = GER
@@ -247,7 +250,7 @@ political_decisions = {
 			349 = {
 				add_corps = {
 					name = "1. Kaitseliit"
-					location = 373
+					location = 349
 					brigade = {
 						name = "Tallinna Malev"
 						type = irregular
@@ -271,12 +274,11 @@ political_decisions = {
 		allow = {
 			year = 1920
 			not = { war_with = RUS }
-			not = { war_with = SOV }
 		}
 		effect = {
 			set_country_flag = treaty_of_tartu
 			prestige = 20
-			treasury = 100000 
+			money = 100000 
 			any_core = {
 				remove_core = RUS
 				remove_core = SOV
@@ -292,18 +294,10 @@ political_decisions = {
 			not = { has_country_flag = vaikiv_ajastu }
 		}
 		allow = {
-			average_militancy = 4
-			farmers = {
-				militancy = 6
+			average_militancy = 5
+			reactionary = .20
+			war = no
 			}
-			soldiers = {
-				militancy = 6
-			}
-			upper_house = {
-				ideology = reactionary
-				value = 0.20
-			}
-		}
 		effect = {
 			set_country_flag = vaikiv_ajastu
 			government = presidential_dictatorship
@@ -321,9 +315,10 @@ political_decisions = {
 				militancy = -4
 				consciousness = -2
 			}
-			estonian = {
-				militancy = -1
-				consciousness = -2
+			any_pop = {
+			limit = { culture = estonian }
+			militancy = -1
+			consciousness = -2
 			}
 		}
 	}
